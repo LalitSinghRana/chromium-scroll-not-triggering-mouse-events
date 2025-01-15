@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe Example</title>
+    <style>
+      html {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        min-width: 750px;
+        padding: 5rem 2rem;
+      }
+      body {
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+      }
+      div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Same origin</h1>
+      <iframe src="index.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+    <div>
+      <h1>Different origin</h1>
+      <iframe src="https://lalitsinghrana.github.io/chromium-scroll-not-triggering-mouse-events/" style="border:none;"></iframe>
+    </div>
+  </body>
+</html>
